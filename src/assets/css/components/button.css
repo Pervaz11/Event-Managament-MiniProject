@@ -1,55 +1,22 @@
-button {
-    --color: #00A97F;
-    padding: 0.8em 1.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
+.button {
+    padding: 20px 36px;
+    font-size: 16px;
+    color: white;
     text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-color: #E86C60;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease;
 }
 
-button::before,
-button::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 1s ease;
-}
-
-button::before {
-    top: -1em;
-    left: -1em;
-}
-
-button::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-}
-
-button:hover::before,
-button:hover::after {
-    height: 410px;
-    width: 410px;
-}
-
-button:hover {
-    color: rgb(10, 25, 30);
-}
-
-button:active {
-    filter: brightness(.8);
+.button:hover {
+    background-color: #f95a4c;
+    background-color: #02775a;
+    scale: 1.04;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }

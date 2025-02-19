@@ -49,8 +49,10 @@
 }
 
 .form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 16px;
-    font-size: .85rem;
     background-color: #e0ecfb;
     box-shadow: rgb(0 0 0 / 8%) 0 -1px;
 }
