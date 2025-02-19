@@ -1,0 +1,21 @@
+.links {
+    position: relative;
+    text-decoration: none;
+}
+
+.links::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    background-color: #E86C60;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.links:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
