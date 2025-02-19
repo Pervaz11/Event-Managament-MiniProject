@@ -98,4 +98,33 @@ select option {
 }
 /* Focusda I lerim scale olmalidi*/
 
+@media (max-width:768px) {
+    .inputs-container {
+        flex-direction: column;
+    }
 
+    .inputs-container input,
+    .inputs-container select {
+        width: 400px;
+    }
+    
+}
+
+@media (max-width:368px) {
+
+    .inputs-container input,
+    .inputs-container select {
+        width: 230px;
+    }
+    
+    .search-container h1 {
+        font-size: 25px;
+    }
+    .search-container p {
+        font-size: 13px;
+    }
+
+    .button {
+        padding: 20px;
+    }
+}
