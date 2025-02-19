@@ -1,7 +1,10 @@
 header {
     background-color: transparent;
     padding: 20px;
-    position: relative;
+    position: fixed;
+    top : 0;
+    left: 0;
+    width: 100%;
 }
 
 .nav-logo {
@@ -23,9 +26,6 @@ header {
 
 .nav-links {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .nav-links li {
