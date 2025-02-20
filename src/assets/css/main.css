@@ -99,11 +99,11 @@ select option {
 }
 
 .category-cards {
-    min-height: 50vh; 
+    min-height: 50vh;
     background-color: white;
     width: 100%;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -165,6 +165,132 @@ select option {
     font-size: 25px;
 }
 
+.events-container {
+    background-color: #e4e2e26e;
+    height: 110vh;
+    margin: 90px 0;
+
+}
+
+.events-heading {
+    padding: 100px 100px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.events-heading h1 {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: Nunito;
+}
+
+.events-heading p {
+    font-size: 20px;
+    font-family: Nunito;
+    font-weight: 600;
+}
+
+.line {
+    border: 2px solid #E86C60;
+    width: 100px;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.swiper {
+    width: 87%;
+
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.swiper-slide {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image span {
+    position: absolute;
+    left: 340px;
+    border-radius: 10px;
+    color: white;
+    font-family: Rubik;
+    letter-spacing: 2px;
+    bottom: 160px;
+    font-size: 20px;
+    background-color: rgba(0, 122, 0, 0.711);
+    padding: 15px;
+}
+
+.card-image img {
+    height: 30vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-content {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Asap;
+}
+
+.card-content h3 {
+    font-size: 23px;
+    width: 300px;
+}
+
+.card-content p {
+    font-size: 19px;
+}
+
+.card-content .price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content .price-container .get-ticket-button {
+    gap: 8px;
+    display: flex;
+    padding: 6px 30px;
+    border: none;
+    background-color: #E86C60;
+    color: white;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out, transform .3s ease, border-radius .3s ease;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.card-content .price {
+    color: #E86C60;
+    font-weight: 600;
+}
+
+.card-content i {
+    margin: 0 10px 0 0;
+}
+
+.card-content .price-container .get-ticket-button:hover {
+    background-color: #ea4d3e;
+    border-radius: 8px;
+    transform: scale(1.02);
+}
+
+
+
 /* Responsive Media Query  */
 
 @media (max-width:768px) {
@@ -196,6 +322,16 @@ select option {
         border: 2px solid #e86b602b;
         text-align: center;
         transition: .3s ease-in-out
+    }
+
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
     }
 }
 
