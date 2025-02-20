@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 95vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -31,6 +31,7 @@
     color: white;
     font-size: 20px;
 }
+
 .inputs-container {
     margin: 20px;
     display: flex;
@@ -58,7 +59,7 @@
 .inputs-container input,
 .inputs-container select {
     padding: 12px 12px 12px 35px;
-    width: 240px;
+    width: 340px;
     outline: none;
     border: 1px solid #ccc;
     height: 44px;
@@ -92,13 +93,85 @@ select option {
     font-size: 14px;
 }
 
-.input-wrapper input:focus + i,
-.select-wrapper select:focus + i {
+.input-wrapper input:focus+i,
+.select-wrapper select:focus+i {
     color: #E86C60;
 }
-/* Focusda I lerim scale olmalidi*/
+
+.category-cards {
+    min-height: 50vh; 
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.category-cards div {
+    border: 2px solid #e86b602b;
+    text-align: center;
+    transition: .3s ease-in-out;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    gap: 10px;
+}
+
+.first-card {
+    border: 2px solid #e86b609e;
+    padding: 30px 40px;
+}
+
+.second-card {
+    border: 2px solid #e86b609e;
+    padding: 30px 20px;
+}
+
+.third-card {
+    border: 2px solid #e86b609e;
+    padding: 30px 38px;
+}
+
+.fourth-card {
+    border: 2px solid #e86b609e;
+    padding: 30px 34px;
+}
+
+.fifth-card {
+    border: 2px solid #e86b609e;
+    padding: 30px 24px;
+}
+
+.sixs-card {
+    border: 2px solid #e86b609e;
+    padding: 30px 37px;
+
+}
+
+.category-cards div:hover {
+    border-color: #E86C60;
+    transform: translateY(-5px);
+
+}
+
+.card h4 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Responsive Media Query  */
 
 @media (max-width:768px) {
+    .main-heading {
+        background-position: center;
+    }
+
     .inputs-container {
         flex-direction: column;
     }
@@ -107,19 +180,39 @@ select option {
     .inputs-container select {
         width: 400px;
     }
-    
+
+
+    .category-cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category-cards div {
+        gap: 10px;
+    }
+
+    .category-cards div {
+        border: 2px solid #e86b602b;
+        text-align: center;
+        transition: .3s ease-in-out
+    }
 }
 
 @media (max-width:368px) {
+    .main-heading {
+        background-position: center;
+    }
 
     .inputs-container input,
     .inputs-container select {
         width: 230px;
     }
-    
+
     .search-container h1 {
         font-size: 25px;
     }
+
     .search-container p {
         font-size: 13px;
     }
