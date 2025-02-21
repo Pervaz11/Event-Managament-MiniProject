@@ -199,9 +199,13 @@ select option {
     border-radius: 5px;
 }
 
+.swiper-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
 .swiper {
     width: 87%;
-
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -218,45 +222,6 @@ select option {
 
 .card-image {
     position: relative;
-}
-
-.dinner {
-    position: absolute;
-    left: 340px;
-    border-radius: 10px;
-    color: white;
-    font-family: Rubik;
-    letter-spacing: 2px;
-    bottom: 160px;
-    font-size: 20px;
-    background-color: rgba(0, 122, 0, 0.711);
-    padding: 15px;
-}
-
-.sport {
-    position: absolute;
-    left: 340px;
-    border-radius: 10px;
-    color: white;
-    font-family: Rubik;
-    letter-spacing: 2px;
-    bottom: 160px;
-    font-size: 20px;
-    background-color: rgba(122, 14, 0, 0.711);
-    padding: 15px;
-}
-
-.concert {
-    position: absolute;
-    left: 310px;
-    border-radius: 10px;
-    color: white;
-    font-family: Rubik;
-    letter-spacing: 2px;
-    bottom: 160px;
-    font-size: 20px;
-    background-color: rgba(122, 104, 0, 0.711);
-    padding: 15px;
 }
 
 .card-image img {
@@ -359,7 +324,6 @@ select option {
 }
 
 .choses-cards div img {
-    width: 80px;
     margin: 10px 0 30px 0;
     transition: .4s ease-in-out;
 }
@@ -377,12 +341,11 @@ select option {
 }
 
 
-
 /* Responsive Media Query  */
 
 @media (max-width:768px) {
     .main-heading {
-        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .inputs-container {
@@ -411,6 +374,32 @@ select option {
         transition: .3s ease-in-out
     }
 
+    .swiper {
+        width: 95%;
+    }
+
+    .swiper-slide {
+        width: 100%;
+    }
+
+    .concert {
+        left: 265px;
+    }
+
+    .dinner {
+        left: 290px;
+    }
+
+    .sport {
+        left: 270px;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .swiper-button-next {
         right: 20px;
         transform: rotate(90deg);
@@ -427,14 +416,20 @@ select option {
         justify-content: center;
     }
 
-    .choses-cards div p {
-        font-size: 18px;
-        width: 400px;
+    .choses-cards div {
+        width: 80%;  
+        gap: 20px;
     }
 
+    .choses-cards div img {
+        max-width: 100%; 
+        height: auto;  
+    }
+
+    .choses-cards div p,
     .choses-cards div h3 {
-        font-size: 25px;
-        width: 400px;
+        text-align: center;  
+        width: 100%;
     }
 }
 
@@ -460,6 +455,32 @@ select option {
         padding: 20px;
     }
 
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide {
+        width: 100%;
+    }
+
+    .concert {
+        left: 250px;
+    }
+
+    .dinner {
+        left: 275px;
+    }
+
+    .sport {
+        left: 280px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
     .choses-container {
         padding: 20px;
     }
@@ -477,19 +498,14 @@ select option {
     }
 
     .choses-cards {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
+        gap: 30px; 
     }
 
-    .choses-cards div p {
-        font-size: 18px;
-        width: 300px;
+    .choses-cards div {
+        width: 90%;
     }
 
-    .choses-cards div h3 {
-        font-size: 25px;
+    .choses-cards div img {
+        max-width: 90%; 
     }
-
 }
