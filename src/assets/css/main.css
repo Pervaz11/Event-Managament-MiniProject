@@ -516,17 +516,6 @@ p {
         width: 100%;
     }
 
-    .concert {
-        left: 265px;
-    }
-
-    .dinner {
-        left: 290px;
-    }
-
-    .sport {
-        left: 270px;
-    }
 
     .price-container {
         display: flex;
@@ -598,17 +587,6 @@ p {
         width: 100%;
     }
 
-    .concert {
-        left: 250px;
-    }
-
-    .dinner {
-        left: 275px;
-    }
-
-    .sport {
-        left: 280px;
-    }
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -641,5 +619,40 @@ p {
 
     .choses-cards div img {
         max-width: 90%;
+    }
+    .subscribe {
+        height: 30vh;
+    }
+
+
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .subscribe-container input{
+        margin: 30px 0 0;
+    }
+
+    .subscribe-container button {
+        width: 300px;
+        margin: 10px;
+    }
+
+
+    .subscribe-container span {
+        color: #E86C60;
+        font-size: 20px;
+        display: flex;
+    }
+
+    .subscribe-container h2 {
+        font-weight: 400;
+    }
+
+    .subscribe-container p {
+        font-size: 18px;
     }
 }
