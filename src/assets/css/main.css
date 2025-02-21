@@ -371,9 +371,6 @@ select option {
     height: 60vh;
 }
 
-.mySwipper .swiper-pagination {
-}
-
 .mySwiper.swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -402,6 +399,7 @@ select option {
     align-items: center;
     opacity: 0.8;
 }
+
 .news-title .info span {
     opacity: 0.5;
 }
@@ -410,7 +408,8 @@ select option {
     color: #ea4c3ebc;
 }
 
-.news-title .info h3, p{
+.news-title .info h3,
+p {
     font-weight: 300;
 }
 
@@ -420,11 +419,59 @@ select option {
     margin: 20px 0;
     gap: 10px;
 }
-.about h2{
+
+.about h2 {
     font-weight: 500;
 }
-.about p{
+
+.about p {
     font-weight: 400;
+}
+
+.subscribe {
+    height: 20vh;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px auto;
+}
+
+.subscribe-container button {
+    padding: 10px;
+    border-radius: 1px;
+}
+
+.subscribe-container button i {
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.subscribe-container input {
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.subscribe-container span {
+    color: #E86C60;
+    font-size: 20px;
+    display: flex;
+}
+
+.subscribe-container h2 {
+    font-weight: 400;
+}
+
+.subscribe-container p {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
 }
 
 
