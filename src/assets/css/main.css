@@ -220,7 +220,7 @@ select option {
     position: relative;
 }
 
-.card-image span {
+.dinner {
     position: absolute;
     left: 340px;
     border-radius: 10px;
@@ -230,6 +230,32 @@ select option {
     bottom: 160px;
     font-size: 20px;
     background-color: rgba(0, 122, 0, 0.711);
+    padding: 15px;
+}
+
+.sport {
+    position: absolute;
+    left: 340px;
+    border-radius: 10px;
+    color: white;
+    font-family: Rubik;
+    letter-spacing: 2px;
+    bottom: 160px;
+    font-size: 20px;
+    background-color: rgba(122, 14, 0, 0.711);
+    padding: 15px;
+}
+
+.concert {
+    position: absolute;
+    left: 310px;
+    border-radius: 10px;
+    color: white;
+    font-family: Rubik;
+    letter-spacing: 2px;
+    bottom: 160px;
+    font-size: 20px;
+    background-color: rgba(122, 104, 0, 0.711);
     padding: 15px;
 }
 
@@ -350,6 +376,8 @@ select option {
     font-size: 23px;
 }
 
+
+
 /* Responsive Media Query  */
 
 @media (max-width:768px) {
@@ -435,15 +463,15 @@ select option {
     .choses-container {
         padding: 20px;
     }
-    
+
     .choses-container h1 {
         font-size: 29px;
     }
-    
+
     .choses-container p {
         font-size: 20px;
     }
-    
+
     .choses-container span {
         width: 90px;
     }
@@ -463,5 +491,5 @@ select option {
     .choses-cards div h3 {
         font-size: 25px;
     }
-    
+
 }
