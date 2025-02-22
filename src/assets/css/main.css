@@ -170,7 +170,6 @@ select option {
     background-color: #e4e2e26e;
     height: 110vh;
     margin: 90px 0;
-
 }
 
 .events-heading {
@@ -509,27 +508,7 @@ p {
         transform: rotate(90deg);
     }
 
-    .choses-cards {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .choses-cards div {
-        width: 80%;
-        gap: 20px;
-    }
-
-    .choses-cards div img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .choses-cards div p,
-    .choses-cards div h3 {
-        text-align: center;
-        width: 100%;
-    }
 }
 
 @media (max-width:368px) {
@@ -554,6 +533,20 @@ p {
         padding: 20px;
     }
 
+
+    .events-heading {
+        padding: 30px;
+    }
+
+    .events-heading h1 {
+        font-size: 25px;
+    }
+
+    .events-heading p {
+        font-size: 18px;
+    }
+
+
     .swiper {
         width: 100%;
         height: auto;
@@ -569,36 +562,42 @@ p {
         display: none;
     }
 
-    .choses-container {
-        padding: 20px;
-    }
-
-    .choses-container h1 {
-        font-size: 29px;
-    }
-
-    .choses-container p {
-        font-size: 20px;
-    }
-
-    .choses-container span {
-        width: 90px;
-    }
-
-    .choses-cards {
-        gap: 30px;
-    }
-
-    .choses-cards div {
-        width: 90%;
-    }
-
-    .choses-cards div img {
-        max-width: 90%;
-    }
 
     .subscribe {
         height: 30vh;
+    }
+
+
+    .location {
+        height: 90vh;
+    }
+
+    .location-title h1 {
+        font-size: 25px;
+        font-family: Asap;
+    }
+
+
+    .location-title p {
+        font-size: 18px;
+        font-family: Asap;
+    }
+
+    .location-title {
+        padding: 0 30px;
+    }
+
+
+    .news-container {
+        padding: 30px;
+    }
+
+    .news-container h1 {
+        font-size: 25px;
+    }
+
+    .news-container p {
+        font-size: 18px;
     }
 
 
