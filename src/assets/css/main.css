@@ -280,64 +280,33 @@ select option {
     transform: scale(1.02);
 }
 
-
-.choses-container {
-    padding: 30px 100px 30px;
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.location {
+    height: 80vh;
 }
 
-.choses-container h1 {
+.location-title h1 {
     font-size: 35px;
     font-family: Asap;
 }
 
-.choses-container p {
-    font-family: Asap;
-    font-size: 22px;
-}
 
-.choses-container span {
-    border: 2px solid #E86C60;
-    width: 100px;
-    display: flex;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-.choses-cards {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 40px 0;
-}
-
-.choses-cards div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    gap: 10px;
-}
-
-.choses-cards div img {
-    margin: 10px 0 30px 0;
-    transition: .4s ease-in-out;
-}
-
-.choses-cards div img:hover {
-    transform: scale(1.1);
-}
-
-.choses-cards div p {
-    font-size: 18px;
-}
-
-.choses-cards div h3 {
+.location-title p {
     font-size: 23px;
+    font-family: Asap;
+}
+
+.location-title {
+    padding: 0 100px;
+}
+
+.map-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.map {
+    border-radius: 20px;
 }
 
 .news {
@@ -474,6 +443,7 @@ p {
     flex-direction: column;
     font-size: 20px;
 }
+
 /* Responsive Media Query  */
 
 @media (max-width:1440px) {
