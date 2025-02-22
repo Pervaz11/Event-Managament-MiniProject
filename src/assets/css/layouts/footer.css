@@ -1,0 +1,136 @@
+footer {
+    height: 50vh;
+    background-color: #343353;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-social {
+    margin: 100px 0 0px 200px;
+}
+
+
+.footer-social p {
+    font-size: 22px;
+    color: white;
+    margin: 10px 0 20px;
+    font-family: Lato;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+
+.socails {
+    display: flex;
+    transition: .3s ease-in;
+}
+
+.socails #instagram {
+    border-radius: 100%;
+    padding: 10px 10px 15px;
+    transition: color .2s ease, transform .3s ease-in-out;
+}
+
+.socails #instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border-radius: 30px;
+    padding: 10px 10px;
+    transform: translateY(-5px);
+}
+
+.socails #facebook {
+    border-radius: 100%;
+    padding: 10px 13px 15px;
+    transition: color .2s ease, transform .3s ease-in-out;
+}
+
+.socails #facebook:hover {
+    background: #1877F2;
+    border-radius: 30px;
+    padding: 10px 13px;
+    transform: translateY(-5px);
+}
+
+.socails #fb-mesenger {
+    border-radius: 100%;
+    padding: 10px 9px 15px;
+    transition: color .2s ease, transform .3s ease-in-out;
+}
+
+.socails #fb-mesenger:hover {
+    background: linear-gradient(45deg, #0099FF, #A033FF, #FF5280, #FF7061);
+    border-radius: 30px;
+    padding: 10px 9px;
+    transform: translateY(-5px);
+}
+
+.socails #twitter {
+    border-radius: 100%;
+    padding: 10px 10px 15px;
+    transition: color .2s ease, transform .3s ease-in-out;
+}
+
+.socails #twitter:hover {
+    background: #1DA1F2;
+    border-radius: 30px;
+    padding: 10px 10px;
+    transform: translateY(-5px);
+}
+
+
+.footer-container .footer-social img {
+    width: 130px;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.contact-container h3 {
+    font-size: 30px;
+    padding: 100px 0 0;
+    margin: 10px;
+}
+
+.contact-container span {
+    margin: 0 0 25px 0;
+    border: 2px solid #E86C60;
+}
+
+.contact-container p {
+    display: flex;
+    gap: 20px;
+}
+
+#line {
+    border: 1px solid rgba(128, 128, 128, 0.603);
+    margin: 20px 0;
+}
+
+.app {
+    padding: 100px 0 0;
+}
+
+.app h3 {
+    color: white;
+    font-size: 27px;
+}
+
+.app img {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    cursor: pointer;
+}
+

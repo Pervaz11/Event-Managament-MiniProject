@@ -2,6 +2,7 @@
 @import "./components/links.css";
 @import "./components/reset.css";
 @import "./layouts/header.css";
+@import "./layouts/footer.css";
 @import "./pages/register.css";
 @import "./pages/login.css";
 
@@ -473,9 +474,14 @@ p {
     flex-direction: column;
     font-size: 20px;
 }
-
-
 /* Responsive Media Query  */
+
+@media (max-width:1440px) {
+    .main-heading {
+        background-repeat: no-repeat;
+    }
+}
+
 
 @media (max-width:768px) {
     .main-heading {
@@ -620,6 +626,7 @@ p {
     .choses-cards div img {
         max-width: 90%;
     }
+
     .subscribe {
         height: 30vh;
     }
@@ -632,7 +639,8 @@ p {
         justify-content: center;
         text-align: center;
     }
-    .subscribe-container input{
+
+    .subscribe-container input {
         margin: 30px 0 0;
     }
 
