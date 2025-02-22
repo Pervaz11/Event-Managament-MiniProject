@@ -4,6 +4,7 @@
 @import "./layouts/header.css";
 @import "./layouts/footer.css";
 @import "./pages/register.css";
+@import "./pages/events.css";
 @import "./pages/login.css";
 
 .main-heading {
