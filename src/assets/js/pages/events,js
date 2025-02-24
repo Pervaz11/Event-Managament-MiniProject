@@ -4,3 +4,10 @@ let cartTab = document.querySelector(".cartTab");
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
 let iconCartSpan = document.querySelector('.icon-cart span');
+
+iconCart.addEventListener('click', () => {
+    cartTab.classList.toggle("showCart");
+});
+closeCart.addEventListener('click', () => {
+    cartTab.classList.toggle("showCart");
+});
