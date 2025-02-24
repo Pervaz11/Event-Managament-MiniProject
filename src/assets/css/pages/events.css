@@ -205,6 +205,10 @@
     font-family: Phudu;
 }
 
+.empty {
+    color: red;
+}
+
 
 .quantity {
     display: flex;
