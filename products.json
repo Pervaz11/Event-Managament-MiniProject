@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "image": "https://www.thesenior.com.au/images/transform/v1/crop/frm/206436302/bd230ba6-9dd1-4e3f-b527-185637644f89.jpg/r0_169_4000_2418_w1200_h678_fmax.jpg",
+    "name": "Coldplay - Music of the Spheres Tour",
+    "type": "Concert",
+    "price": 120.50,
+    "date": "2025-06-15T20:00:00",
+    "location": "London, UK"
+  },
+  {
+    "id": 2,
+    "image": "https://pbs.twimg.com/media/GgUCxpqXMAAIVzH?format=jpg&name=4096x4096",
+    "name": "Formula 1 Grand Prix",
+    "type": "Sports",
+    "price": 250.00,
+    "date": "2025-07-07T15:00:00",
+    "location": "Monaco"
+  },
+  {
+    "id": 3,
+    "image": "https://imaging.broadway.com/images/custom/w1200/102184-14.jpg",
+    "name": "Broadway - The Phantom of the Opera",
+    "type": "Theater",
+    "price": 75.00,
+    "date": "2025-08-20T19:30:00",
+    "location": "New York, USA"
+  },
+  {
+    "id": 4,
+    "image": "https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_sm/s3/2024-02/041324-ufc-300-pereira-vs-hill-TEMP-HERO.jpg?h=d1cb525d&itok=1DBc5Rsp",
+    "name": "UFC 300",
+    "type": "Sports",
+    "price": 180.00,
+    "date": "2025-09-10T22:00:00",
+    "location": "Las Vegas, USA"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ytimg.com/vi/-lMFp-5Mr4o/maxresdefault.jpg",
+    "name": "Imagine Dragons - Mercury Tour",
+    "type": "Concert",
+    "price": 95.00,
+    "date": "2025-07-22T19:30:00",
+    "location": "New York, USA"
+  },
+  {
+    "id": 6,
+    "image": "https://assets.vogue.com/photos/6678e71e056c168f13d2d3be/16:9/w_2580,c_limit/VOGUE-WORLD-2024_PARIS_PHIL-OH-023RZ.jpg",
+    "name": "Paris Fashion Week",
+    "type": "Fashion",
+    "price": 300.00,
+    "date": "2025-10-01T18:00:00",
+    "location": "Paris, France"
+  },
+  {
+    "id": 7,
+    "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/12/896/500/thumbnail_ARG-vs-FRA-WC-Final-2022-Sun-Dec-18.jpg?ve=1&tl=1",
+    "name": "FIFA World Cup Final",
+    "type": "Sports",
+    "price": 500.00,
+    "date": "2026-07-18T20:00:00",
+    "location": "Madrid, Spain"
+  },
+  {
+    "id": 8,
+    "image": "https://e00-xlk-ue-marca.uecdn.es/uploads/2024/12/16/676037b071f02.jpeg",
+    "name": "UEFA Europe conferance leauge",
+    "type": "Footbal",
+    "price": 50.00,
+    "date": "2025-11-05T09:00:00",
+    "location": "San Francisco, USA"
+  },
+  {
+    "id": 9,
+    "image": "https://gonintendo.com/attachments/image/31346/file/medium-ffb81eda7cb88b336fd6a7f4aeb04a18.png",
+    "name": "Comic-Con International",
+    "type": "Expo",
+    "price": 45.00,
+    "date": "2025-07-25T10:00:00",
+    "location": "San Diego, USA"
+  },
+  {
+    "id": 10,
+    "image": "https://portal.azertag.az/sites/default/files/kukla_11.jpg",
+    "name": "Puppet Theater",
+    "type": "Theater",
+    "price": 34.0,
+    "date": "2025-09-05T21:00:00",
+    "location": "Baku, Azerbaijan"
+  },
+  {
+    "id": 11,
+    "image": "https://cdn.outsideonline.com/wp-content/uploads/2022/01/Murphy_Clayton-FH-OlyTrials21.jpg",
+    "name": "Sprint",
+    "type": "Sport",
+    "price": 50.0,
+    "date": "2025-09-05T21:00:00",
+    "location": "Paris, France "
+  },
+  {
+    "id": 12,
+    "image": "https://static01.nyt.com/images/2021/09/19/arts/19NEW-CLASSICAL-LISTINGS-oct1/merlin_156149724_ede9ef74-b3b2-4bd5-abf1-fd599a176813-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+    "name": "Opera Concert",
+    "type": "Concert",
+    "price": 100.0,
+    "date": "2025-09-05T21:00:00",
+    "location": "Milan, Italy"
+  }
+]
