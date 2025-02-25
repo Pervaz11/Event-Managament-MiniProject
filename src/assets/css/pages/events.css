@@ -166,10 +166,11 @@
     transition: .3s ease-in-out;
 
 }
+
 .product-container {
     display: flex;
-    align-items: center; 
-    gap: 10px; 
+    align-items: center;
+    gap: 10px;
     margin: 10px;
 }
 
@@ -180,8 +181,9 @@
     border-radius: 10px;
     transition: .3s ease-in-out;
 }
+
 .image img:hover {
-    transform: scale(1.04); /* Resim üzerine gelince büyütme etkisi */
+    transform: scale(1.04);
 }
 
 
@@ -275,14 +277,26 @@
     width: 0;
 }
 
-@media only screen and (max-width: 992px) {
+.listCart p{
+    margin: 10px 25px;
+    font-size: 20px;
+    font-family: phudu;
+}
+
+@media (max-width: 992px) {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .listProduct {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 360px) {
+    .listProduct {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

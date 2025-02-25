@@ -24,9 +24,8 @@
     flex-direction: column;
 }
 
-.search-container h1 {
-    color: white;
-    font-size: 40px;
+ .search-btn .button{
+    padding: 20px 50px;
 }
 
 .search-container p {

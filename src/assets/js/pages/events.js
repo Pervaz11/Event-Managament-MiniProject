@@ -50,7 +50,7 @@ const addDataToHTML = () => {
                             <p><i class="fa-regular fa-clock"></i><span>|</span>Wed, September 8, 2027, 12:00 AM</p>
                             <p><i class="fa-solid fa-location-dot"></i> <span>|</span> Fresno, California</p>
                             <div class="buy">
-                                <button class="button addCart">Add To Cart</button>
+                                <button id="btn" class="button addCart">Add To Cart</button>
                                 <span>$${vproduct.price}</span>
                             </div>
                         </div>
