@@ -40,12 +40,12 @@
   <main>
     <section class="main-heading">
       <div class="form-box">
-        <form class="form">
+        <form id="login-form" class="form">
           <span class="title">Log in</span>
           <span class="subtitle">Login account with your email.</span>
           <div class="form-container">
-            <input type="email" class="input" placeholder="Email">
-            <input type="password" class="input" placeholder="Password">
+            <input type="email" id="email" class="input" placeholder="Email">
+            <input type="password" id="password" class="input" placeholder="Password">
           </div>
           <button>Sign up</button>
         </form>
@@ -108,7 +108,10 @@
       </div>
     </div>
   </footer>
+  <!-- Sweat Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- JS -->
+   <script type="module" src="./src/assets/js/pages/login.js"></script>
   <script type="module" src="./src/assets/js/main.js"></script>
 </body>
 

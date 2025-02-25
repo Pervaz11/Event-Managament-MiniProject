@@ -45,13 +45,13 @@
                     <span class="title">Sign up</span>
                     <span class="subtitle">Create account with your email.</span>
                     <div class="form-container">
-                        <input type="text" class="input" placeholder="Full Name">
-                        <input type="lastName" class="input" placeholder="Last Name">
-                        <input type="email" class="input" placeholder="Email">
-                        <input type="password" class="input" placeholder="Password">
-                        <input type="password" class="input" placeholder="Confrim Password">
+                        <input type="text" id="fullName" class="input" placeholder="Full Name">
+                        <input type="text" id="lastName" class="input" placeholder="Last Name">
+                        <input type="email" id="email" class="input" placeholder="Email">
+                        <input type="password" id="password" class="input" placeholder="Password">
+                        <input type="password" id="confirmPassword" class="input" placeholder="Confirm Password">
                     </div>
-                    <button>Sign up</button>
+                    <button class="signUp-btn">Sign up</button>
                 </form>
                 <div class="form-section">
                     <p>Have an account? <a href="./login.html">Log in</a></p>
@@ -110,7 +110,12 @@
             </div>
         </div>
     </footer>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- JS -->
+    <script type="module" src="./src/assets/js/pages/register.js"></script>
+    <script type="module" src="./src/assets/js/services/api.js"></script>
+    <script type="module" src="./src/assets/js/services/reguest.js"></script>
     <script type="module" src="./src/assets/js/main.js"></script>
 </body>
 

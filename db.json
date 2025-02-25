@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": "client",
+      "email": "jane@gmail.com",
+      "fullName": "Jane Doe",
+      "lastName": "Aliyeva",
+      "password": "987654321",
+      "username": "newname"
+    },
+    {
+      "id": "2378",
+      "username": "testuser",
+      "email": "test@example.com"
+    },
+    {
+      "id": "2ef7",
+      "username": "testuser",
+      "email": "test@example.com"
+    },
+    {
+      "id": "bf9a",
+      "fullName": "dsad",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "role": "client"
+    },
+    {
+      "id": "3dca",
+      "fullName": "asd",
+      "lastName": "Abdullayev",
+      "email": "yadux3online@gmail.com",
+      "password": "ayazpervaz",
+      "role": "client"
+    },
+    {
+      "id": "f06e",
+      "fullName": "Ayaz",
+      "lastName": "Abdullayev",
+      "email": "pervaz@gmail.com",
+      "password": "ayazpervaz",
+      "role": "client"
+    },
+    {
+      "id": "df4a",
+      "fullName": "Kamilə",
+      "lastName": "Abdullayev",
+      "email": "dsadaddas@gmail.com",
+      "password": "ayazpervaz",
+      "role": "client"
+    }
+  ]
+}
