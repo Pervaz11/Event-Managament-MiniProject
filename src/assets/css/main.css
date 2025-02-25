@@ -24,13 +24,22 @@
     flex-direction: column;
 }
 
- .search-btn .button{
+.search-btn .button {
     padding: 20px 50px;
 }
 
 .search-container p {
     color: white;
-    font-size: 20px;
+    font-family: Ubuntu;    
+    margin: 10px 0;
+    font-size: 23px;
+}
+
+.search-container h1 {
+    color: white;
+    margin: 10px 0;
+    font-family: Ubuntu;
+    font-size: 43px;
 }
 
 .inputs-container {
@@ -86,7 +95,7 @@
 
 .search-btn {
     display: flex;
- }
+}
 
 select option {
     background-color: #fff;
@@ -251,7 +260,7 @@ select option {
     justify-content: space-between;
 }
 
-.card-content .price-container .get-ticket-button {
+.card-content .price-container .get-ticket-button  {
     gap: 8px;
     display: flex;
     padding: 6px 30px;
@@ -533,6 +542,9 @@ p {
         padding: 20px;
     }
 
+    .category-cards {
+        padding: 20px;
+    }
 
     .events-heading {
         padding: 30px;
