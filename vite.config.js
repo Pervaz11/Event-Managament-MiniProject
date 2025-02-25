@@ -8,7 +8,7 @@ export default defineConfig({
                 main: "index.html",
                 login: "login.html",
                 register: "register.html",
-                user: "user.html",
+                events: "events.html",
             },
         },
     },
