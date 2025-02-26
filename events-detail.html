@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CDN -->
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/ragasta" rel="stylesheet">
+    <!-- Fav Icon CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/assets/css/main.css">
-    <title>Home page</title>
+    <title>Events Detail Page</title>
 </head>
 
 <body>
@@ -23,7 +25,7 @@
                     <ul class="nav-links">
                         <li><a class="links" href="./index.html">Home</a></li>
                         <li><a class="links" href="./events.html">Events</a></li>
-                        <li><a class="links" href="#">Events Detail</a></li>
+                        <li><a class="links" href="./events-detail.html">Events Detail</a></li>
                         <li><a class="links" href="#">My Tickets</a></li>
                         <li><a class="links" href="./wishlist.html">Wishlist</a></li>
                         <li><a class="links" href="./login.html"><i id="user" class="fa-regular fa-user"></i>Login</a>
@@ -39,25 +41,35 @@
         </nav>
     </header>
     <main>
-        <section class="main-heading">
-            <div class="form-box">
-                <form class="form">
-                    <span class="title">Sign up</span>
-                    <span class="subtitle">Create account with your email.</span>
-                    <div class="form-container">
-                        <input type="text" id="fullName" class="input" placeholder="Full Name">
-                        <input type="text" id="lastName" class="input" placeholder="Last Name">
-                        <input type="email" id="email" class="input" placeholder="Email">
-                        <input type="password" id="password" class="input" placeholder="Password">
-                        <input type="password" id="confirmPassword" class="input" placeholder="Confirm Password">
-                    </div>
-                    <button class="signUp-btn">Sign up</button>
-                </form>
-                <div class="form-section">
-                    <p>Have an account? <a href="./login.html">Log in</a></p>
-                </div>
+        <section>
+            <div class="events-detail-heading">
             </div>
         </section>
+        <section class="events-detail">
+            <div class="detail-container">
+                <img id="productImg" src="" alt="Event Image">
+
+                <div class="product-details">
+                    <h1 id="product-name"></h1>
+                    <p><i class="fa-regular fa-clock"></i><span id="product-date"></span></p>
+                    <p><i class="fa-solid fa-location-dot"></i><span id="product-location"></span></p>
+                
+                    <div class="buy">
+                        <div>
+                            <a href="./events.html">
+                                <button id="btn" class="button addCart">Add To Cart</button>
+                            </a>
+                            <button id="favorites" class="button">Add to Favorites</button>
+                        </div>
+                        <div class="price">
+                            <span id="product-price"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="footer-container">
@@ -110,13 +122,9 @@
             </div>
         </div>
     </footer>
-    <!-- Axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- JS -->
-    <script type="module" src="./src/assets/js/pages/register.js"></script>
-    <script type="module" src="./src/assets/js/services/api.js"></script>
-    <script type="module" src="./src/assets/js/services/reguest.js"></script>
-    <script type="module" src="./src/assets/js/main.js"></script>
+    <script type="module" src="./src/assets/js/pages/eventsDetail.js"></script>
 </body>
 
 </html>

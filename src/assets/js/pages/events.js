@@ -44,15 +44,20 @@ const addDataToHTML = () => {
             newProduct.innerHTML = `
                 <div class="product-container">
                     <div class="card">
-                        <img src="${vproduct.image}" alt="${vproduct.name}">
+                        <img id="productImg" src="${vproduct.image}" alt="${vproduct.name}">
                         <div class="prodcut-info">
                             <h2>${vproduct.name}</h2>
                             <p><i class="fa-regular fa-clock"></i><span>|</span>Wed, September 8, 2027, 12:00 AM</p>
                             <p><i class="fa-solid fa-location-dot"></i> <span>|</span> Fresno, California</p>
                             <div class="buy">
                                 <button id="btn" class="button addCart">Add To Cart</button>
+                                <button id="btn" class="favorites"><i class="fa-solid fa-bookmark"></i></button>
                                 <span>$${vproduct.price}</span>
-                            </div>
+                                </div>
+                                <a href="events-detail.html?id=">
+                                    <button id="details-btn" class="button">Details</i></button>
+                                </a>
+                                </div>
                         </div>
                     </div>
                 </div>  
@@ -81,8 +86,9 @@ const updateCartUI = () => {
                         <div class="image">
                             <img src="${product.image}" alt="${product.name}">
                         </div>
+                        <div class="prodcut-info">
                         <div class="name">
-                            ${product.name}
+                            <p class="prodct-name">${product.name}</p>
                         </div>
                         <div class="price-container">
                             <div class="totalPrice">$${(product.price * cartItem.quantity).toFixed(2)}</div>
@@ -92,13 +98,14 @@ const updateCartUI = () => {
                                 <p class="pls">+</p>
                             </div>
                         </div>
+                        </div>
                     </div>
                 `;
                 listCartHTML.appendChild(cartItemElement);
             }
         });
     } else {
-        listCartHTML.innerHTML = `<p>Your cart is empty!</p>`;
+        listCartHTML.innerHTML = `<p><i class="fa-solid fa-cart-arrow-down"></i> Your cart is empty!</p>`;
     }
 
     iconCartSpan.textContent = totalQuantity;
@@ -193,6 +200,49 @@ const addCartToHTML = () => {
 };
 
 
+const filterProductsByPrice = () => {
+    let minPrice = parseInt(document.querySelector(".input-min").value);
+    let maxPrice = parseInt(document.querySelector(".input-max").value);
+
+    let filteredProducts = listProduct.filter(product =>
+        product.price >= minPrice && product.price <= maxPrice
+    );
+
+    displayFilteredProducts(filteredProducts);
+};
+
+const displayFilteredProducts = (products) => {
+    listProductHTML.innerHTML = '';
+    products.forEach(vproduct => {
+        let newProduct = document.createElement('div');
+        newProduct.dataset.id = vproduct.id;
+        newProduct.classList.add('item');
+        newProduct.innerHTML = `
+            <div class="product-container">
+                <div class="card">
+                    <img id="productImg" src="${vproduct.image}" alt="${vproduct.name}">
+                    <div class="prodcut-info">
+                        <h2>${vproduct.name}</h2>
+                        <p><i class="fa-regular fa-clock"></i><span>|</span>Wed, September 8, 2027, 12:00 AM</p>
+                        <p><i class="fa-solid fa-location-dot"></i> <span>|</span> Fresno, California</p>
+                        <div class="buy">
+                            <button id="btn" class="button addCart">Add To Cart</button>
+                            <button id="btn" class="favorites"><i class="fa-solid fa-bookmark"></i></button>
+                            <span>$${vproduct.price}</span>
+                        </div>
+                        <a href="events-detail.html?id=">
+                            <button id="details-btn" class="button">Details</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+        listProductHTML.appendChild(newProduct);
+    });
+};
+
+const confirmBtn = document.getElementById('confirm-btn');
+
 
 const initApp = () => {
     console.log('Fetching product.json...');
@@ -211,11 +261,11 @@ const initApp = () => {
         .catch(error => {
             console.error("There was an error loading data:", error);
         });
+    document.querySelectorAll(".range-input input").forEach(input => {
+        input.addEventListener("input", filterProductsByPrice);
+    });
 
-    if (localStorage.getItem('cart')) {
-        carts = JSON.parse(localStorage.getItem('cart'));
-        updateCartUI();
-    }
 };
 
 initApp();
+

@@ -6,6 +6,8 @@
 @import "./pages/register.css";
 @import "./pages/events.css";
 @import "./pages/login.css";
+@import "./pages/events-details.css";
+@import "./components/price.css";
 
 .main-heading {
     background-image: url(https://demo.ovathemewp.com/meup/wp-content/uploads/2019/10/bg_home1.jpg);
