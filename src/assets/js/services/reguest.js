@@ -1,103 +1,111 @@
 import axios from "axios";
-import { API_BASE_URL } from "./api";
+import { API_BASE_URL } from "./api.js";
 
-// Get All data
+async function getAll(endpoints) {
+    const result = {
+        data: null,
+        loading: true,
+        error: null,
+    };
+    await axios
+        .get(API_BASE_URL + endpoints)
+        .then((response) => {
+            result.data = response.data;
+        })
+        .catch((err) => {
+            result.error = err;
+        })
+        .finally(() => {
+            result.loading = false;
+        });
+    return result;
+}
 
-export async function getAll(endpoint = "users") {
-    const fullURL = API_BASE_URL + endpoint;
-    console.log("API URL:", fullURL);
-
+async function getByID(endpoint, id) {
     const result = {
         data: null,
         loading: true,
         error: null,
     };
 
-    try {
-        const response = await axios.get(fullURL, { timeout: 5000 });
-        console.log("Information:", response.data);
-        result.data = response.data;
-    } catch (error) {
-        console.error("An error occurred:", error);
-        result.error = error;
-    } finally {
-        result.loading = false;
-        console.log("Loading finished.");
-    }
+    await axios
+        .get(`API_BASE_URL + endpoint + /${id}`)
+        .then((response) => {
+            console.log("axios response: ", response);
+            result.data = response.data;
+        })
+        .catch((err) => {
+            result.error = err;
+        })
+        .finally(() => {
+            result.loading = false;
+        });
 
     return result;
 }
 
-// Get One Data
-export async function getByID(endpoint, id) {
-    return getAll(`${endpoint}/${id}`);
-}
-
-// Post new data
-export async function post(endpoint, payload) {
+async function post(endpoint, payload) {
     const result = {
         data: null,
         loading: true,
         error: null,
     };
-
-    try {
-        const response = await axios.post(`${API_BASE_URL}${endpoint}`, payload);
-        console.log("Axios response:", response.data);
-        result.data = response.data;
-    } catch (error) {
-        console.error("An error occurred:", error);
-        result.error = error;
-    } finally {
-        result.loading = false;
-        console.log("Loading finished.");
-    }
+    await axios
+        .post(API_BASE_URL + endpoint, payload)
+        .then((response) => {
+            console.log("axios response: ", response);
+            result.data = response.data;
+        })
+        .catch((err) => {
+            result.error = err;
+        })
+        .finally(() => {
+            result.loading = false;
+        });
 
     return result;
 }
 
-// Delete data by ID
-export async function deleteByID(endpoint, id) {
+async function updateOne(endpoint, payload, id) {
     const result = {
         data: null,
         loading: true,
         error: null,
     };
-
-    try {
-        const response = await axios.delete(`${API_BASE_URL}${endpoint}/${id}`);
-        console.log("Axios response:", response.data);
-        result.data = response.data;
-    } catch (error) {
-        console.error("An error occurred:", error);
-        result.error = error;
-    } finally {
-        result.loading = false;
-        console.log("Loading finished.");
-    }
+    await axios
+        .patch(`API_BASE_URL + endpoint + /${id}, payload`)
+        .then((response) => {
+            console.log("axios response: ", response);
+            result.data = response.data;
+        })
+        .catch((err) => {
+            result.error = err;
+        })
+        .finally(() => {
+            result.loading = false;
+        });
 
     return result;
 }
 
-// Update data by ID
-export async function update(endpoint, payload, id) {
+async function deleteOne(endpoint, id) {
     const result = {
         data: null,
         loading: true,
         error: null,
     };
-
-    try {
-        const response = await axios.patch(`${API_BASE_URL}${endpoint}/${id}`, payload);
-        console.log("Axios response:", response.data);
-        result.data = response.data;
-    } catch (error) {
-        console.error("An error occurred:", error);
-        result.error = error;
-    } finally {
-        result.loading = false;
-        console.log("Loading finished.");
-    }
+    await axios
+        .delete(`API_BASE_URL + endpoint + /${id}`)
+        .then((response) => {
+            console.log("axios response: ", response);
+            result.data = response.data;
+        })
+        .catch((err) => {
+            result.error = err;
+        })
+        .finally(() => {
+            result.loading = false;
+        });
 
     return result;
 }
@@ -106,8 +114,8 @@ const controller = {
     getAll: getAll,
     getByID: getByID,
     post: post,
-    deleteByID: deleteByID,
-    update: update,
+    deleteOne: deleteOne,
+    updateOne: updateOne,
 };
 
-export default controller
+export default controller;
