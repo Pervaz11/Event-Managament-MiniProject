@@ -9,7 +9,7 @@
 
 .listProduct {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -31,7 +31,7 @@
 .listCart p {
     font-size: 24px;
     margin: 5px 20px;
-    font-family: ubuntu;
+    font-family: Ubuntu;
     font-weight: 500;
 }
 
@@ -312,10 +312,21 @@
     width: 0;
 }
 
-@media (max-width:360px) {
+@media (max-width:576px) {
+
+    .img-container {
+        width: 106%;
+    }
+
     .listProduct {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        border: 2px solid red;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .filter-container {
+        margin: 0px auto;
     }
 }
 

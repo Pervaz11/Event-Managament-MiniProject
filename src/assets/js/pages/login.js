@@ -11,6 +11,7 @@ loginForm.addEventListener("submit", async function (e) {
     e.preventDefault();
     const apiResponse = await controller.getAll(endpoints.users);
     const checkUser = apiResponse.data.find((i) => {
+    
         return (
             i.email == loginInputs.email.value &&
             i.password == loginInputs.password.value
@@ -18,7 +19,11 @@ loginForm.addEventListener("submit", async function (e) {
     });
     if (checkUser) {
         localStorage.setItem("userId", JSON.stringify(checkUser.id));
+        localStorage.setItem("userName", JSON.stringify(checkUser.role));
         window.location.href = "./index.html";
+        if (checkUser.role == "admin") {
+            window.location.href = "./adminDashboard.html";
+        }
     } else {
         window.alert("incorrect pasword or email");
     }

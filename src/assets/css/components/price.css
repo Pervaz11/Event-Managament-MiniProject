@@ -105,3 +105,10 @@ input[type="range"]::-moz-range-thumb {
 #confrim-btn {
     margin: 35px 0 0 90px;
 }
+
+@media (max-width:360px) {
+    .filter-container {
+        width: 300px;
+        padding: 30px 25px 60px;
+    }   
+}
