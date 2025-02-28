@@ -1,6 +1,13 @@
-const menuIcon = document.querySelector(".fa-bars");
-const navLinks = document.querySelector(".nav-links");
-menuIcon.addEventListener("click", function () {
-    menuIcon.classList.toggle("fa-x"); 
-    navLinks.classList.toggle("active");
-});
+import "./helpers/navbar"
+import "./helpers/slider"
+import "./classes/user"
+import "./helpers/price"
+import "./helpers/subscribe"
+import "./pages/events"
+import "./pages/eventsDetail"
+import "./pages/login"
+import "./pages/register"
+import "./pages/wishlist"
+import "./pages/adminDashboard"
+import "./services/api"
+import "./services/reguest"

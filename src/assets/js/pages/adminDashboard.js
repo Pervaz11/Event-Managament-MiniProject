@@ -1,7 +1,6 @@
 import controller from "../services/reguest.js";
 import { endpoints } from "../services/api.js";
 
-// Menu Navigation Hover Effect
 let list = document.querySelectorAll(".navigation li");
 
 function activeLink() {
@@ -13,7 +12,6 @@ function activeLink() {
 
 list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
-// Menu Toggle
 let toggle = document.querySelector(".toggle");
 let navigation = document.querySelector(".navigation");
 let main = document.querySelector(".main");
@@ -23,16 +21,14 @@ toggle.onclick = function () {
   main.classList.toggle("active");
 };
 
-// Get Events and Populate Table
 const tbody = document.querySelector(".recentOrders table tbody");
 
 async function getAll() {
   try {
-    // Correct the API request to fetch the data
-    const res = await fetch(endpoints.events); // Use fetch to get data from API
-    const events = await res.json(); // Parse the response as JSON
+    const res = await fetch(endpoints.events);
+    const events = await res.json();
 
-    tbody.innerHTML = ""; // Clear previous data
+    tbody.innerHTML = ""; 
 
     events.forEach((event) => {
       tbody.innerHTML += `
@@ -60,5 +56,4 @@ async function getAll() {
   }
 }
 
-// Call the function to load data
 getAll();
